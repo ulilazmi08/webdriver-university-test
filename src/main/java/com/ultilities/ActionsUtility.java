@@ -23,4 +23,5 @@ public class ActionsUtility extends Utility{
         Color getBackgroundColor= Color.fromString(getLocator.getCssValue("background-color"));
         assert getBackgroundColor.equals(color);
     }
+
 }

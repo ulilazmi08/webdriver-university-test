@@ -16,6 +16,7 @@ public class IndexPage extends BasePage {
     private By dropDownSection = By.id("dropdown-checkboxes-radiobuttons");
     private By actionSection = By.id("actions");
     private By holdClick = By.id("click-box");
+    private By pageObjectModel = By.id("page-object-model");
     public ContactUs goToContactUsPage(){
         scrollToElementJS(dropDownSection);
         click(dropDownSection);
@@ -30,6 +31,11 @@ public class IndexPage extends BasePage {
         scrollToElementJS(actionSection);
         click(actionSection);
         return new ActionsPage();
+    }
+    public PageObjectModel goToPageObjectModel(){
+        scrollToElementJS(pageObjectModel);
+        click(pageObjectModel);
+        return new PageObjectModel();
     }
 
 }
