@@ -62,8 +62,26 @@ public class BaseTest {
                 throw new RuntimeException(e);
             }
             System.out.println("Screenshot Located At "+destination);
+        } else if (ITestResult.SUCCESS == testResult.getStatus()) {
+                //screenshot in an interface, we must typecast the interface, so driver can take screenshot
+                TakesScreenshot takesScreenshot= (TakesScreenshot) driver;
+                File source= takesScreenshot.getScreenshotAs(OutputType.FILE);
+                File destination = new File(System.getProperty("user.dir") +
+                        "/resources/screenshots/success/(" +
+                        java.time.LocalDate.now() + ") " +
+                        testResult.getName() + ".png");
+                //Get name is a method from the ITest result interface that gets the name
+                //of our failed test
+                try {
+                    FileHandler.copy(source,destination);
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+                System.out.println("Screenshot Located At "+destination);
+
         }
     }
+
 
     @AfterClass
     public void tearDown(){

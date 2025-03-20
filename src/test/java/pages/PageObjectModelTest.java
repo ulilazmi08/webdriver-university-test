@@ -9,6 +9,16 @@ public class PageObjectModelTest extends BaseTest {
     public void checkModalIsDisplayed() throws InterruptedException {
         PageObjectModel pageObjectModel = indexPage.goToPageObjectModel();
         pageObjectModel.checkModal();
+    }
+    public void checkClickCarouselRight() throws InterruptedException {
+        PageObjectModel pageObjectModel = indexPage.goToPageObjectModel();
+        pageObjectModel.clickRightCarousel();
+        Thread.sleep(2000);
+
+    }
+    public void checkClickCarouselLeft() throws InterruptedException {
+        PageObjectModel pageObjectModel = indexPage.goToPageObjectModel();
+        pageObjectModel.clickLeftCarousel();
         Thread.sleep(2000);
     }
 }

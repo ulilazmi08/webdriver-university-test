@@ -12,7 +12,7 @@ public class ActionsPageTest extends BaseTest {
         int y =0;
         ActionsPage actionsPage = indexPage.goToActionPage();
         actionsPage.moveItem(x,y);
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     }
     @Test
     public void testHoldClick() throws InterruptedException {

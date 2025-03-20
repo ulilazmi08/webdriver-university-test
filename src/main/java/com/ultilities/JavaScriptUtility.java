@@ -29,9 +29,13 @@ public class JavaScriptUtility extends Utility{
         WebElement element = driver.findElement(locator);
         act.doubleClick(element).perform();
     }
-    public static void waiModalWindow(By locator){
+    public static void waitWindow(By locator){
         WebElement modal = driver.findElement((locator));
-        var wait = new WebDriverWait(driver, Duration.ofSeconds(2));
+        var wait = new WebDriverWait(driver, Duration.ofSeconds(6));
         wait.until(ExpectedConditions.visibilityOf(modal));
+    }
+    public static void waitVisibilityOf(By locator){
+        var wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 }
