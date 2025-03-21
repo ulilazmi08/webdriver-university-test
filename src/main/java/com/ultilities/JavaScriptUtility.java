@@ -38,4 +38,14 @@ public class JavaScriptUtility extends Utility{
         var wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+    public static void clickOkAlert(){
+        driver.switchTo().alert().accept();
+    }
+    public static void clickCancelAlert(){
+        driver.switchTo().alert().dismiss();
+    }
+    public static void getAlertText(){
+        driver.switchTo().alert().getText();
+    }
+
 }

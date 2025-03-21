@@ -14,6 +14,7 @@ public class IndexPage extends BasePage {
     private By buttonClickSection = By.xpath("//div/h1[text()='BUTTON CLICKS']");
     private By datePickerSection = By.xpath("//div/h1[text()='DATEPICKER']");
     private By accordionSection = By.xpath("//div/h1[text()='ACCORDION & TEXT AFFECTS (APPEAR & DISAPPEAR)']");
+    private By popUpAlertSection = By.xpath("//div/h1[text()='POPUP & ALERTS']");
     private By dropDownSection = By.id("dropdown-checkboxes-radiobuttons");
     private By actionSection = By.id("actions");
     private By holdClick = By.id("click-box");
@@ -33,13 +34,16 @@ public class IndexPage extends BasePage {
         return new ActionsPage();
     }
     public PageObjectModel goToPageObjectModel(){
-        scrollToElementJS(pageObjectModel);
         click(pageObjectModel);
         return new PageObjectModel();
     }
     public AccordionPage gotToAccordionPage(){
         click(accordionSection);
         return new AccordionPage();
+    }
+    public PopUpAlertsPage goToPopUpAlertsPage(){
+        click(popUpAlertSection);
+        return new PopUpAlertsPage();
     }
 
 }
