@@ -1,12 +1,9 @@
-package com.pages;
+package com.webdriveruniversity.pages;
 
 import com.base.BasePage;
 import org.openqa.selenium.By;
-import com.ultilities.JavaScriptUtility;
-import com.ultilities.DropDownUtility;
 
 import static com.ultilities.JavaScriptUtility.scrollToElementJS;
-import static com.ultilities.JavaScriptUtility.switchNewTab;
 
 public class IndexPage extends BasePage {
     private By contactUsSection = By.xpath("//div/h1[text()='CONTACT US']");

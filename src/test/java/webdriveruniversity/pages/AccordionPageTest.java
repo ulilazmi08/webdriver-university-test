@@ -1,7 +1,7 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.AccordionPage;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.AccordionPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

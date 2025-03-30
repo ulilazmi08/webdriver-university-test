@@ -1,9 +1,8 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.ContactFormThankYou;
-import com.pages.ContactUs;
-import com.pages.IndexPage;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.ContactFormThankYou;
+import com.webdriveruniversity.pages.ContactUs;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

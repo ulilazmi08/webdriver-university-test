@@ -1,14 +1,13 @@
-package base;
+package webdriveruniversity.pages.base;
 
 import com.base.BasePage;
-import com.pages.DropDownPage;
-import com.pages.IndexPage;
+import com.webdriveruniversity.pages.DropDownPage;
+import com.webdriveruniversity.pages.IndexPage;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.io.FileHandler;
-import org.testng.ITest;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

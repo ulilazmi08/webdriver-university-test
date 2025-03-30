@@ -1,4 +1,4 @@
-package com.pages;
+package com.webdriveruniversity.pages;
 
 import com.base.BasePage;
 import org.openqa.selenium.By;

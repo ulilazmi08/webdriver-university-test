@@ -1,4 +1,4 @@
-package com.pages;
+package com.webdriveruniversity.pages;
 
 import org.openqa.selenium.By;
 import static com.ultilities.JavaScriptUtility.scrollToElementJS;

@@ -1,6 +1,6 @@
-package pages;
-import base.BaseTest;
-import com.pages.DropDownPage;
+package webdriveruniversity.pages;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.DropDownPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

@@ -1,7 +1,7 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.PopUpAlertsPage;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.PopUpAlertsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

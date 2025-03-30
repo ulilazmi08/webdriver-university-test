@@ -1,7 +1,7 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.PageObjectModel;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.PageObjectModel;
 import org.testng.annotations.Test;
 
 public class PageObjectModelTest extends BaseTest {

@@ -1,7 +1,7 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.DropDownPage;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.DropDownPage;
 import org.testng.annotations.Test;
 
 public class IndexTest extends BaseTest {

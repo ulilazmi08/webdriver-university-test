@@ -1,8 +1,7 @@
-package pages;
+package webdriveruniversity.pages;
 
-import base.BaseTest;
-import com.pages.ActionsPage;
-import org.openqa.selenium.WebElement;
+import webdriveruniversity.pages.base.BaseTest;
+import com.webdriveruniversity.pages.ActionsPage;
 import org.testng.annotations.Test;
 
 public class ActionsPageTest extends BaseTest {
