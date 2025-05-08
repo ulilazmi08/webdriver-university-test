@@ -1,10 +1,11 @@
-package eviltester.base;
+package eviltester;
 
 import com.eviltester.pages.CalculatorPage;
+import eviltester.base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CalculatorPageTest extends BaseTest{
+public class CalculatorPageTest extends BaseTest {
     @Test
     public void testTimesFunction() throws InterruptedException {
         CalculatorPage calculatorPage = indexPage.clickCalculatorPage();

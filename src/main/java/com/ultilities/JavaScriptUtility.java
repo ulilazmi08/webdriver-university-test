@@ -1,13 +1,14 @@
 package com.ultilities;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 public class JavaScriptUtility extends Utility{
     public static void scrollToElementJS(By locator){
@@ -35,7 +36,12 @@ public class JavaScriptUtility extends Utility{
         wait.until(ExpectedConditions.visibilityOf(modal));
     }
     public static void waitVisibilityOf(By locator){
-        var wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+    public static void fluentWait(By locator){
+        Wait<WebDriver> wait = new FluentWait<>(driver)
+                .withTimeout(Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     public static void clickOkAlert(){
@@ -47,5 +53,11 @@ public class JavaScriptUtility extends Utility{
     public static void getAlertText(){
         driver.switchTo().alert().getText();
     }
+    public static void sendKeyAlert(String text){
+        driver.switchTo().alert().sendKeys(text);
+    }
+//    public static void sendTabAlert(){
+//        driver.switchTo().alert().sendKeys(Keys.TAB);
+//    }
 
 }
